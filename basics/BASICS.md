@@ -38,3 +38,66 @@ b = 12
 a = 10
 print(type(a))
 ```
+
+### Strings (In depth)
+- Strings has both positive and negative indexing
+```py
+str = "hello"
+print(str[0]) # Positive indexing
+print(str[-1]) # Negative indexing
+```
+- **String slicing**: We can slice our strings using `a[start: stop : steps]`
+  - start: From where to start *(default is 0)*
+  - stop: Where to stop *(stop_value - 1)*
+  - steps *(optional)*: In how many steps should we move and if we set it to -1 its reversed (The sliced part)
+
+*Note*: Strings are immutable by nature
+
+## Print statement ways
+- How to combine string with variables in print: We can use `,`
+```py
+age = 20
+print("Age is", age) # Space is added automatically
+```
+- TO format string we can use `print(f"")`
+```py
+age = 20
+print(f"Age is {age}") # This is a formatted string
+```
+
+### Escape sequences
+- `\n` - For next line
+- `\t` - For tab
+- `\b` - For backspace
+
+### Raw string
+- Its similar to format string but we use `r` and we cannot use escape sequences in this.
+```py
+print(r"This is a raw\n string")
+```
+
+### Useful functions
+- lower() - `str_var.lower()` can be used for lowercasing
+- upper() - `str_var.upper()` can be used for uppercasing
+- count("string") - Can be use for counting particular instances of the mentioned string in the string.
+- find("string") - Can be used to find the index where the string mentioned starts *(First instance)*
+- len(string) - Can be used to find the length of the string
+- isdigit() - Can be used to check if the string has only numerics return `True` or `False`
+
+*Note*: We can use `+` operator to join strings which is called concatenation.
+
+## Type conversion
+- We use this to convert one data type to another. Following are ways to convert
+  - int() 
+  - float()
+  - str()
+  - bool()
+  - Truthy values - Everything is truthy except for 0, 0.0, False, "", [], (), {}
+  - Falsy values - 0, 0.0, False, "", [], (), {}
+
+## How to take input from user?
+- To take input we can make use of built-in `input` function  
+```py
+name = input("What's your name?") # Always takes in string format so we need type conversion here
+print(name)
+```
