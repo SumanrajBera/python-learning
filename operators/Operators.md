@@ -23,3 +23,14 @@
 *Note*: We can use `*` to multiply the times a string. *Eg. print("hello" * 3) - will print it 3 times*
 
 ## Comparision operators
+- `==`: Equals to
+- `!=`: Not equals to
+- `>`: Greater than
+- `>=`: Greater than equal to
+- `<`: Lesser than
+- `<=`: Lesser than equal to
+
+## Logical operators
+- `and` - AND operator
+- `or` - OR operator
+- `not` - NOT operator
