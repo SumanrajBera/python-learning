@@ -1,5 +1,5 @@
 # LOOPs
-- Loops are ued for performing repetitive task.
+- Loops are used for performing repetitive task.
 
 ## for-loop
 
