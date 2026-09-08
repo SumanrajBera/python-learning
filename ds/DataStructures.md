@@ -15,7 +15,7 @@ print(li[0],li[-4]) # This prints the same item
 ```
 - Here we also have slicing feature just like strings where we can slice based on `li[startIdx: stopIdx: step]`. `startIdx` is 0 by default. If we make `step` -1 then it will slice in reverse but we need to make sure startIdx is smaller than stopIdx. 
 
-## Deep and shallow copy
+### Deep and shallow copy
 - `Reference copy`: In this copy if we make changes in the copy it also makes changes in the original
 - `Shallow copy`: In this copy if we make changes 1 level below the original then it will not reflect in original but after 1 level it will reflect in the original.
 - `Deep copy`: In this copy it is a fully independent copy of the original.
@@ -27,14 +27,14 @@ shallowCopy = a.copy()
 deepCopy = copy.deepcopy(a)
 ```
 
-## List traversal
+### List traversal
 - We can traverse the entire list in the same way we do with string which are:
   - for-in loop
   - using range function
 
 **Note**: We can use `help(list)` to get help with list.
 
-## Commonly used function in list
+### Commonly used function in list
 - append(item): This is used to add item to the list
 - clear(): This is used to clear all items.
 - count(item): This can be used to count items of the list.
