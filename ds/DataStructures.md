@@ -40,3 +40,28 @@ deepCopy = copy.deepcopy(a)
 - count(item): This can be used to count items of the list.
 - insert(idx, item): This can be used to insert item at specific index
 - pop(): It removes and returns at index = -1
+
+## Tuples
+- Tuples are also used multiple values and is also heterogenous in nature.
+```py
+# syntax
+tup = (1,2,3,4)
+```
+- It is immutable in nature.
+- Here the indexing, slicing and traversing are similar to list and string.
+- We can make use of `tuple(list)` to make a list into a tuple.
+- It has two helpful methods: `count(item)` and `index(item)`
+
+### Tuple unpacking
+- We can unpack tuples into variables
+```py
+a,b,c = (1,2,3)
+print(a) # this will print 1
+
+# but this causes one more problem suppose we have a tuple of only one value
+a = (1)
+print(type(a)) # this will be int as it unpacked it  
+```
+- To survive from single value tuple being unpacked always apply a comma
+
+**Note**: Tuple and list both allow duplicate values
