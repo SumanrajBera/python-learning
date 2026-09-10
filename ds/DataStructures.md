@@ -65,3 +65,40 @@ print(type(a)) # this will be int as it unpacked it
 - To survive from single value tuple being unpacked always apply a comma
 
 **Note**: Tuple and list both allow duplicate values
+
+## Set
+- Set can also be used to store multiple values which can be hashed. For ex: string, number, functions and boolean.
+```py
+# basic syntax to create set
+s = {10,20}
+
+# but if you create an empty set
+s = {}
+print(type(s)) # this will be a dictionary
+
+# Hence to create an empty set we can set()
+s = set()
+print(type(s)) # this will be a set
+```
+- It has unordered nature.
+- We cannot have duplicate values in set.
+- We can use set() constructor to convert list into a set.
+- It has a semi-mutable natue as we cannot edit the elements that are stored inside the set.
+
+### Commonly used methods of set
+- add(item): It adds an item to the set.
+- remove(item): It removes an item from the set.
+- clear(): It is used to clear all items from the set
+- difference(): It returns a difference between the two sets which means that element that exist in first but not in second. Suppose a and b so `a.difference(b)` will give us elements that exist in set a but no in b. We can also use `-` for shorter usage *(a-b)*.
+- discard(item): Does the same remove item from set but if element is not present fails silently
+- -=: It can used for difference and assigning
+- intersection() or `&`: It returns the common in both sets.
+- &=: To find intersetion and assign.
+- symmetric_difference() or `^`: It is used to return elements which are in either sets but not in both.
+- |: It is used for return union of both sets.
+- >=: It is used to return boolean if first set is superset of the other set.
+- <=: It is used to return boolean if first set is subset of the other set.
+**Note**: There are more useful methods which can be experimented with. *(w3school for reference)*
+
+## Dictionary
+- 
