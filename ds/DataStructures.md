@@ -96,7 +96,7 @@ print(type(s)) # this will be a set
 - &=: To find intersetion and assign.
 - symmetric_difference() or `^`: It is used to return elements which are in either sets but not in both.
 - |: It is used for return union of both sets.
-- >=: It is used to return boolean if first set is superset of the other set.
+- `>=`: It is used to return boolean if first set is superset of the other set.
 - <=: It is used to return boolean if first set is subset of the other set.
 **Note**: There are more useful methods which can be experimented with. *(w3school for reference)*
 
