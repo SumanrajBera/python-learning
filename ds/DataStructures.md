@@ -101,4 +101,34 @@ print(type(s)) # this will be a set
 **Note**: There are more useful methods which can be experimented with. *(w3school for reference)*
 
 ## Dictionary
-- 
+- Dictionary is also used to store mutliple data types in the form of key-value pairs.
+```py
+# basic syntax 
+dt = {"key":"value}
+```
+- It is unordered in nature in older versions of Python *(before 3.7)* but now they maintain an insertion order.
+- They are mutable.
+- We can use `dict` constructor to create dictionaries
+```py
+# basic way
+d = dict(name = "Sam", age = 30)
+
+# via list and tuple
+print(dict([("name","Sam"), ("age", 22)]))
+```
+- We can traverse here using key and also values.
+```py
+for key in dt:
+    print(dt[key]) # printing values via key
+for value in dt.values():
+    print(value) # printing the values directly as dt.values() returns a list of values
+```
+
+### Commonly used methods
+- clear() - To clear all items from dictionary
+- get(key) - To get value based on key
+- items() - To get all items in form of list of tuples which consist of key and value pairs.
+- keys() - It returns a list of dictionary keys
+- pop(key) - It return the value which got poped from the dictionary
+- popitem() - It returns a tuple of key-value pair of the last item inserted
+- update(dict) - It updates the first dictonary with the key-value pair from the dictinary provided.
