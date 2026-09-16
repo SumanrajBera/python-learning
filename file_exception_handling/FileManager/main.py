@@ -151,7 +151,7 @@ def operate_file():
         if option != "a" and option != "b" and option != "c":
             raise (Exception("Didn't Enter a valid choice. Please try later!\n"))
 
-        fileName = input("Enter file name you want to change with extension: ")
+        fileName = input("Enter file name you want to operate on with extension: ")
         path = Path(__file__).parent
 
         lt = list(path.glob("*"))
