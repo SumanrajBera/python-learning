@@ -173,7 +173,7 @@ def operate_file():
             else:
                 with open(path / fileName, "a") as fs:
                     str = input("Enter content that you want to append: ")
-                    fs.write(str)
+                    fs.write("\n" + str)
                 print()
         elif option == "c":
             if fileName == "main.py":
@@ -181,7 +181,7 @@ def operate_file():
             else:
                 with open(path / fileName, "w") as fs:
                     str = input("Enter content that you want to append: ")
-                    fs.write("\n" + str)
+                    fs.write(str)
                 print()
     except Exception as err:
         print("Error occured:", err)
