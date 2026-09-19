@@ -31,3 +31,26 @@ class Class_Name:
 obj = Class_Name()
 print(obj.a)
 ```
+
+## Constructors
+- Constructor is a method that runs automatically when we call a class. And it will target the location of an object.
+```py
+class NewClass:
+  def __init__(self, material, zip):
+    print("This runs when we call a class")
+    self.material = material
+    self.zip = zip
+  
+  # instance method
+  def printMaterial(self):
+    print(f"Material: {self.material}\nZips: {self.zip}")
+
+obj = NewClass("leather", 4)
+obj2 = NewClass("cotton", 2)
+# Due to self every object refers to its assigned material
+print(obj.material)
+print(obj2.material)
+```
+- `self` here targets the location of the object.
+
+*Note*: OOPs is majorly used in management system.
