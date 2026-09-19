@@ -54,3 +54,24 @@ print(obj2.material)
 - `self` here targets the location of the object.
 
 *Note*: OOPs is majorly used in management system.
+
+## In-depth attribute and method
+
+### Attrubute
+- `Instance attribute`: An attribute that is created using the `self` keyword. Eg. self.zip or self.brand
+- `Class attribute`: An attribute that is created without the self keyword.
+
+### Methods
+- `Instance method`: A method created using self keyword as first parameter.
+- `Class method`: A method created with `@classmethod` as decorator and do not rely on instance specific data. Here we use `cls` to target the class.
+```py
+class Factory:
+  # class attribute
+  age = 20
+
+  # cls targets the class
+  @classmethod
+  def myMethod(cls):
+    print(cls.age)
+```
+- `Static method`: It is created using `@staticmethod` and we don't pass anything.
