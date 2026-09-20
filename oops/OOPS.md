@@ -134,3 +134,48 @@ obj.test_super()  # Outputs: "Hello from A"
 ### Types of Polymorphism.
 - Method overloading: It doesn't work as traditional method overloading in other languages. Its main purpose to use the same method with different set of parameters from parent class.
 - Method overriding: Its where we define the same method in parent class but with different behavior.
+
+## Abstraction
+- Abstraction is used for hiding unnecessary details and focusing on only essential features.
+- We have two things in this:
+  - `Abstract Class`: A class made up of abstract methods
+  - `Abstract method`: Which is defined but not implemented.
+- Here we need to make use of `abc` module for Python enforcement or else we will loose the enforcement.
+```py
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+    @abstractmethod
+    def sound(self):
+        pass
+
+
+class Dog(Animal):
+    # If we don't implement sound(), it will throw an error
+    # when we try to create a Dog object.
+    def sound(self):
+        print("I bark.")
+```
+
+## Dunder/Magic methods
+- These methods are special methods in python that define object behavior for built-in operations.
+- They are pre-fixed with `__` on both ends. Eg. `__init__`
+
+### Common ones
+- `__str__(self)`: String representation of an object 
+- `__len__(self)`: For built-in len function
+- `__add__(self, obj)`: To add to elements of the obj
+- `__eq__(self, obj)`: To ensure two objects are of same type. Which is called when we compare two objects by `obj1 == obj2`
+```py
+class NewClass:
+  def __init__(self, name, items):
+    self.name = name
+    self.items = items
+  
+  def __str__(self): 
+    return "This is the string which will print when defined else will print the address of the object"
+  
+  def __len__(items):
+    return len(self.items)
+```
+*Note*: There are more but we can try that when we find out.
