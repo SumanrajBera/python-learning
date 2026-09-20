@@ -125,3 +125,12 @@ obj.test_super()  # Outputs: "Hello from A"
 - `Public`: This is available everywhere.
 - `Protected`: These are only accessible to class and subclass. And its not as `strict` as in other languages (So no usage in Python). It is created using a `_` before names of attributes and method.
 - `Private`: Accessible to only the defined class. And its declared similar to Protected but with the use of `__`.
+  
+## Polymorphism
+- Basic meaning changing into different forms. 
+- It is a mechanism through which different classes can define the same methods with different behavior.
+*Note*: In python its achieved only through method overriding.
+
+### Types of Polymorphism.
+- Method overloading: It doesn't work as traditional method overloading in other languages. Its main purpose to use the same method with different set of parameters from parent class.
+- Method overriding: Its where we define the same method in parent class but with different behavior.
