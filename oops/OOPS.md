@@ -75,3 +75,44 @@ class Factory:
     print(cls.age)
 ```
 - `Static method`: It is created using `@staticmethod` and we don't pass anything.
+
+## Inheritance
+- Inheritance is a mechanism by which a `child` class can use the properties and methods of its `parent` class.
+```py
+class Animal:
+    def __init__(self,name, legs):
+        self.name = name
+        self.legs = legs
+
+    def printInfo(self):
+        print(f"My name is {self.name} and I have {self.legs} legs")
+
+class Human(Animal):
+    def __init__(self, name, legs, canTalk):
+        super().__init__(name, legs)
+        self.canTalk = canTalk
+```
+- Here we call the super() method which is used to initialise the init of parent.
+
+### Types of inheritance
+- Single level: In this one class inherits from another class
+- Multilevel : In this a class inherits from another class that also inherits from another class.
+- Multiple inheritance: Here we inherit from two or more classes. Here when we call the method or attribute which exists in two or more classes it will call the first in chain that contains it and if we call it in the next one using super it will call the next in chain.
+```py
+class ParentA:
+    def greet(self):
+        print("Hello from A")
+
+class ParentB:
+    def greet(self):
+        print("Hello from B")
+
+class Child(ParentA, ParentB):
+    def test_super(self):
+        # super() looks at the MRO chain: Child -> ParentA -> ParentB -> object
+        super().greet() 
+
+obj = Child()
+obj.test_super()  # Outputs: "Hello from A"
+``` 
+- Hierrarchical: Its where multiple class inherit from the same class.
