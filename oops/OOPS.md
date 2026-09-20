@@ -92,7 +92,7 @@ class Human(Animal):
         super().__init__(name, legs)
         self.canTalk = canTalk
 ```
-- Here we call the super() method which is used to initialise the init of parent.
+- Here we call the super() method which is used to initialise the init of parent. It is also used to make use of to extend or reuse the parent's behavior(methods).
 
 ### Types of inheritance
 - Single level: In this one class inherits from another class
@@ -116,3 +116,12 @@ obj = Child()
 obj.test_super()  # Outputs: "Hello from A"
 ``` 
 - Hierrarchical: Its where multiple class inherit from the same class.
+  
+## Encapsulation
+- It is the method of bundling attribute and methods together into a single unit.
+- Here we make use of access modifiers to control the access of methods and attributes.
+
+### Access modifiers
+- `Public`: This is available everywhere.
+- `Protected`: These are only accessible to class and subclass. And its not as `strict` as in other languages (So no usage in Python). It is created using a `_` before names of attributes and method.
+- `Private`: Accessible to only the defined class. And its declared similar to Protected but with the use of `__`.
