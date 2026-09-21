@@ -23,3 +23,5 @@ print(sum(10, 20))
 from modules.math_utils import *
 print(sum(10, 20))
 ```
+
+*Note*: To create a package we need to create a directory with `__init__.py` file with other modules and we can later use them 

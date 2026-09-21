@@ -18,3 +18,7 @@ print(math_utils.sub(10, 20))
 
 # from modules.math_utils import *
 # print(sum(10, 20))
+
+from my_package import math_utils, string_utils
+
+print(string_utils.length("Hello World"))
