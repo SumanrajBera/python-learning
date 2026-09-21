@@ -99,7 +99,7 @@ class Library:
                 )
 
     def borrow_book(self):
-        member_id = input("Enter the mermber ID : ").strip()
+        member_id = input("Enter the member ID : ").strip()
         members = [m for m in self.data["members"] if m["id"] == member_id]
         if not members:
             print("No such member exists")
@@ -129,7 +129,7 @@ class Library:
             self.save_data()
 
     def return_book(self):
-        member_id = input("Enter the mermber ID : ").strip()
+        member_id = input("Enter the member ID : ").strip()
         members = [m for m in self.data["members"] if m["id"] == member_id]
         if not members:
             print("No such member exists")
@@ -146,7 +146,7 @@ class Library:
             print(f"{i}. {b['title']} ({b['book_id']})")
 
         try:
-            choice = int(input("enter number to return : - "))
+            choice = int(input("Select number to return: "))
             selected = member["borrowed"].pop(choice - 1)
 
             books = [bk for bk in self.data["books"] if bk["id"] == selected["book_id"]]
